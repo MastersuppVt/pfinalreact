@@ -1,0 +1,1249 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  cursor: url(../assets/cursor/normal.png), auto;
+}
+body:not(.bodyDonate) {
+  background-color: #558ed9;
+  font-family: "Quicksand", sans-serif;
+  max-width: 1920px;
+  margin: auto;
+}
+a {
+  cursor: url(../assets/cursor/link.png), auto;
+}
+header:not(eN) {
+  overflow: hidden;
+  width: 100%;
+  height: 90vh;
+  background-image: linear-gradient(
+    120deg,
+    rgba(166, 192, 254, 0.541) 0%,
+    rgba(246, 128, 132, 0.507) 100%
+  );
+}
+section:not(esteNo):not(esteMenos):not(eM):not(vht) {
+  width: 100%;
+  height: 100vh;
+}
+
+.contenedor {
+  width: 100%;
+  overflow: hidden;
+  margin: auto;
+  padding: 0 0;
+}
+.logo {
+  position: fixed;
+  top: 40px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0, 0, 6px rgba(0, 0, 0, 0.5%);
+  z-index: 100;
+}
+.barra:target .menu {
+  transform: translate(0%, 0);
+}
+#cerrar{
+  color: aqua;
+}
+#cerrar:hover{
+ color: #bf304a;
+}
+.menu {
+  font-size: 30px;
+  transform: translate(110%, 0);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30vw;
+  height: 100%;
+  background-image: linear-gradient(
+    -225deg,
+    #65379b 0%,
+    #886aea 53%,
+    #6457c6 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0, 0, 0 rgba(0, 0, 0, 0.5%);
+  z-index: 100;
+  transition: transform 0.3s ease-in-out;
+}
+.menu a:hover {
+  color: #bf304a;
+}
+.head {
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.head video {
+  top: 0%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: auto;
+}
+.enunciado1 {
+  position: absolute;
+  top: 35vh;
+  text-align: center;
+}
+#titulo {
+  font-size: 80px;
+  font-weight: bold;
+  color: #558ed9;
+  margin-bottom: 30px;
+}
+#video_background {
+  right: 0px;
+  z-index: -1000;
+  overflow: hidden;
+  filter: blur(6px);
+  height: 100vh;
+  position: absolute;
+}
+.menu a {
+  text-decoration: none;
+  color: #558ed9;
+}
+.secUno {
+  height: 90vh;
+  transform: translate(0, 0%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: linear-gradient(
+    -225deg,
+    #65379b 0%,
+    #886aea 53%,
+    #6457c6 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.5;
+}
+.secUno .img {
+  width: 25%;
+  z-index: -500;
+}
+.pRespuesta {
+  width: 45%;
+  text-align: center;
+}
+#fondo1 {
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+}
+.secDos {
+  height: 90vh;
+  transform: translate(0, 0%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+
+  line-height: 1.5;
+}
+.secDos #imagen2 {
+  width: 25%;
+}
+.sobre {
+  width: 45%;
+  text-align: center;
+}
+#fondo2 {
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+}
+.secTres {
+  height: 15vh;
+  transform: translate(0, 0%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  line-height: 1.5;
+}
+.secCuatro {
+  height: 90vh;
+  transform: translate(0, 0%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: linear-gradient(
+    -225deg,
+    #65379b 0%,
+    #886aea 53%,
+    #6457c6 100%
+  );
+  line-height: 1.5;
+}
+.secCuatro img {
+  width: 25%;
+}
+#text {
+  width: 45%;
+  text-align: center;
+}
+.secCinco {
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  line-height: 1.5;
+}
+.secCinco iframe {
+  width: 35vw;
+  height: 30vh;
+}
+.esteNo {
+  height: 80vh;
+}
+.secSeis {
+  height: 100%;
+  transform: translate(0, 0%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.5;
+  background-image: linear-gradient(
+    -225deg,
+    #65379b 0%,
+    #886aea 53%,
+    #6457c6 100%
+  );
+}
+#ofi {
+  width: 50vw;
+}
+.secSiete {
+  height: 100%;
+  transform: translate(0, 0%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.5;
+}
+.secSiete iframe {
+  width: 50vw;
+  height: 70vh;
+}
+.listFull {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.listFull img {
+  width: 5%;
+  display: block;
+  margin-bottom: 15px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5%);
+  cursor: pointer;
+}
+.esteMenos {
+  width: 100vw;
+  height: 20vh;
+}
+.subTitle {
+  font-weight: 500;
+  color: #180f31;
+  margin-bottom: 40px;
+  font-size: 40px;
+  text-align: center;
+}
+p {
+  font-size: 20px;
+  color: #fff;
+}
+footer {
+  bottom: 0;
+  width: 100vw;
+  height: 15vh;
+  padding-bottom: 00.1px;
+}
+.pie {
+  bottom: 0;
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  background-image: url(../assets/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icoPie img {
+  margin-bottom: 15px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5%);
+  cursor: pointer;
+  width: 5vw;
+  height: 10vh;
+}
+.icoPie {
+  position: absolute;
+  left: 0ch;
+  bottom: 0;
+}
+.pie p {
+  width: auto;
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+}
+.contenedorAsk {
+  z-index: 100;
+  width: 80%;
+  height: 80vh;
+  position: fixed;
+  left: 45%;
+  top: 4%;
+  cursor: pointer;
+  transform: rotate(90deg) translate(-150%, 230%);
+  transition: all 600ms;
+}
+.contenedorAsk:target {
+  transform: rotate(0deg) translate(0%, 0%);
+}
+.close:target .contenedorAsk {
+  transform: rotate(-90deg) translate(150%, -230%);
+}
+.closeBtmI {
+  position: relative;
+  left: 95%;
+  width: 30px;
+}
+.btmI {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.btmI a {
+  text-decoration: none;
+}
+.btmS a {
+  text-decoration: none;
+}
+/* Lineas especificas Media */
+/* Lineas especificas Media */
+/* Lineas especificas Media */
+/* Lineas especificas Media */
+.contenedorMedia {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.eN {
+  width: 100vw;
+  height: 25vh;
+  background-image: url(../assets/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.eM {
+  height: 25vh;
+}
+.titMedia {
+  font-size: 120px;
+  font-weight: bold;
+  color: #65379b;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 60px 0;
+}
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.col {
+  flex-basis: 50%;
+  min-width: 250px;
+}
+.col1 {
+  flex-basis: 50%;
+  min-width: 250px;
+}
+.featureImg {
+  width: 90%;
+  margin: auto;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+.smallImgRow {
+  display: flex;
+  background: #886aea;
+  margin: 20px 0;
+  align-items: center;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 85%;
+}
+.smallImg {
+  position: relative;
+}
+.smallImg img {
+  width: 150px;
+}
+.smallImgRow p {
+  margin-left: 20px;
+  color: black;
+  line-height: 22px;
+  font-size: 15px;
+}
+.playBtm {
+  width: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.playBtmyt {
+  width: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.smallImg .playBtm {
+  width: 35px;
+}
+.smallImg .playBtmyt {
+  width: 35px;
+}
+.videoplayer1 {
+  width: 80%;
+  height: 80vh;
+  position: fixed;
+  left: 10%;
+  top: 10%;
+  cursor: pointer;
+  transform: rotate(90deg) translate(-150%, 230%);
+  transition: all 600ms;
+}
+.videoplayer2 {
+  width: 80%;
+  height: 80vh;
+  position: fixed;
+  left: 10%;
+  top: 10%;
+  cursor: pointer;
+  transform: rotate(90deg) translate(-150%, 230%);
+  transition: all 600ms;
+}
+.videoplayer3 {
+  width: 80%;
+  height: 80vh;
+  position: fixed;
+  left: 10%;
+  top: 10%;
+  cursor: pointer;
+  transform: rotate(90deg) translate(-150%, 230%);
+  transition: all 600ms;
+}
+.videoplayer4 {
+  width: 80%;
+  height: 80vh;
+  position: fixed;
+  left: 10%;
+  top: 10%;
+  cursor: pointer;
+  transform: rotate(90deg) translate(-150%, 230%);
+  transition: all 600ms;
+}
+.videoplayer5 {
+  width: 80%;
+  height: 80vh;
+  position: fixed;
+  left: 10%;
+  top: 10%;
+  cursor: pointer;
+  transform: rotate(90deg) translate(-150%, 230%);
+  transition: all 600ms;
+}
+.videoplayer5:target {
+  transform: rotate(0deg) translate(0%, 0%);
+}
+.close:target .videoplayer5 {
+  transform: rotate(-90deg) translate(150%, -230%);
+}
+.videoplayer6 {
+  width: 80%;
+  height: 80vh;
+  position: fixed;
+  left: 10%;
+  top: 10%;
+  cursor: pointer;
+  transform: rotate(90deg) translate(-150%, 230%);
+  transition: all 600ms;
+}
+.videoplayer6:target {
+  transform: rotate(0deg) translate(0%, 0%);
+}
+.close:target .videoplayer6 {
+  transform: rotate(-90deg) translate(150%, -230%);
+}
+.videoplayer7 {
+  width: 80%;
+  height: 80vh;
+  position: fixed;
+  left: 10%;
+  top: 10%;
+  cursor: pointer;
+  transform: rotate(90deg) translate(-150%, 230%);
+  transition: all 600ms;
+}
+.videoplayer7:target {
+  transform: rotate(0deg) translate(0%, 0%);
+}
+.close:target .videoplayer7 {
+  transform: rotate(-90deg) translate(150%, -230%);
+}
+.videoplayer8 {
+  width: 80%;
+  height: 80vh;
+  left: 10%;
+  top: 10%;
+  position: fixed;
+  cursor: pointer;
+  transform: rotate(90deg) translate(-150%, 230%);
+  transition: all 600ms;
+}
+.videoplayer8:target {
+  transform: rotate(0deg) translate(0%, 0%);
+}
+.close:target .videoplayer8 {
+  transform: rotate(-90deg) translate(150%, -230%);
+}
+.videoplayer1:target {
+  transform: rotate(0deg) translate(0%, 0%);
+}
+.close:target .videoplayer1 {
+  transform: rotate(-90deg) translate(150%, -230%);
+}
+.videoplayer2:target {
+  transform: rotate(0deg) translate(0%, 0%);
+}
+.close:target .videoplayer2 {
+  transform: rotate(-90deg) translate(150%, -230%);
+}
+.videoplayer3:target {
+  transform: rotate(0deg) translate(0%, 0%);
+}
+.close:target .videoplayer3 {
+  transform: rotate(-90deg) translate(150%, -230%);
+}
+.videoplayer4:target {
+  transform: rotate(0deg) translate(0%, 0%);
+}
+.close:target .videoplayer4 {
+  transform: rotate(-90deg) translate(150%, -230%);
+}
+video.focus {
+  outline: none;
+}
+iframe.focus {
+  outline: none;
+}
+.closeBtm {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+}
+.pokes{
+  width: 60%;
+  margin: auto;
+  height: 32vh;
+}
+.pokes h5{
+  color: #180f31;
+  transform: translate(0,-24vh);
+  }
+.imgPoke {
+  transform: translate(290%,0);
+  width: 15%;
+  height: 30vh;
+  display: block;
+  margin-bottom: 15px;
+  box-shadow: 0 0 6 rgba(0, 0, 0, 0.5%);
+  background-image: url(../assets/open-pokeball.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+/* lineas especificas SOCIAL */
+/* lineas especificas SOCIAL */
+/* lineas especificas SOCIAL */
+/* lineas especificas SOCIAL */
+.discord {
+  max-width: 500px;
+  max-height: 800px;
+  z-index: 90;
+  position: fixed;
+  width: 40%;
+  height: 40vh;
+  bottom: 0px;
+  right: 0px;
+  transform: translate(0, 81%);
+  transition: all 0.6s;
+}
+.discord:hover {
+  transform: translate(0, 0);
+}
+.formTitle {
+  font-weight: normal;
+  color: #886aea;
+  text-align: center;
+  padding: 14px 0;
+}
+.formTitle span {
+  color: aliceblue;
+}
+.form {
+  background: rgba(0, 0, 0, 0.5);
+  max-width: 650px;
+  width: 50vw;
+  padding: 35px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 6px;
+  margin-right: 8%;
+}
+.fLabel {
+  display: block;
+  color: #886aea;
+  font-size: 16px;
+  position: relative;
+}
+.fInput,
+#texA {
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #65379b;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #fff;
+}
+#texA {
+  resize: vertical;
+  max-height: 150px;
+  min-height: 50px;
+}
+.btmSubmit {
+  width: 49.2%;
+  outline: none;
+  background: #65379b;
+  font-size: 16px;
+  border: none;
+  color: #fff;
+  padding: 15px 0;
+  cursor: pointer;
+}
+.btmReset {
+  width: 49.2%;
+  outline: none;
+  background: #65379b;
+  font-size: 16px;
+  border: none;
+  color: #fff;
+  padding: 15px 0;
+  cursor: pointer;
+}
+.btmReset:hover {
+  background-color: #886aea;
+}
+.btmSubmit:hover {
+  background-color: #886aea;
+}
+.btmS {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.contenedorSocial {
+  display: grid;
+  grid-template-areas: "formulario . redesS";
+  width: 100%;
+  justify-content: center;
+}
+.redesS {
+  width: 40vw;
+  height: 31vh;
+  margin-left: 8%;
+}
+.redesS img {
+  border-radius: 16px;
+}
+/* lineas especificas NEWS */
+/* lineas especificas NEWS */
+/* lineas especificas NEWS */
+/* lineas especificas NEWS */
+
+/* lineas especificas DONATE */
+/* lineas especificas DONATE */
+/* lineas especificas DONATE */
+/* lineas especificas DONATE */
+.contenedorDonate {
+  width: 100%;
+  overflow: hidden;
+  padding: 0 0;
+}
+.bodyDonate {
+  font-family: "Quicksand", sans-serif;
+  background-image: url(../assets/backDonate.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  max-width: 1920px;
+}
+#donadores{
+  text-align: center;
+}
+.dolar{
+  text-align: center;
+}
+/*lineas especificas loader*/
+/*lineas especificas loader*/
+/*lineas especificas loader*/
+/*lineas especificas loader*/
+.loader {
+  margin: auto;
+  display: flex;
+  z-index: 110;
+  background-color: #180f31;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  clip-path: circle(150% at 0 100%);
+  transition: all 0.8s;
+}
+.loader2 {
+  clip-path: circle(0% at 0 100%);
+}
+#barraProgreso{
+  transform: translate(75%,50%);
+  position: absolute;
+  height: 50vh;
+  width: 50vw;
+  display: flex;
+  overflow: hidden;
+}
+.cargando {
+  position: absolute;
+height: 50vh;
+
+}
+#cargado {
+  position: absolute;
+height: 50vh;
+width: 0%;
+overflow: hidden;
+transition: all 0.2s;
+animation: cargado 5s;
+}
+#cargado img{
+  object-position: center;
+  size: 50vw 50vh;
+}
+.cargadoFull {
+  position: absolute;
+height: 50vh;
+width: 0%;
+overflow: hidden;
+}
+.cargadoFull2{
+  position: absolute;
+height: 50vh;
+width: 100%;
+overflow: hidden;
+ z-index: 10000;
+}
+/* lineas especificas Animated */
+/* lineas especificas Animated */
+/* lineas especificas Animated */
+/* lineas especificas Animated */
+@keyframes cargado {
+100%{
+  width: 100%;
+}
+}
+/* lineas especificas RESPONSIBE */
+/* lineas especificas RESPONSIBE */
+/* lineas especificas RESPONSIBE */
+/* lineas especificas RESPONSIBE */
+@media (min-width: 0px) and (max-width: 350px) {
+  /* /Dispositivo XS/ */
+  .enunciado1 {
+    position: absolute;
+    top: 35vh;
+    text-align: center;
+  }
+  #titulo {
+    font-size: 40px;
+    font-weight: bold;
+    color: #558ed9;
+    margin-bottom: 30px;
+  }
+  .secUno .img {
+    display: none;
+  }
+  .pRespuesta {
+    width: 100%;
+    text-align: center;
+  }
+  .secDos #imagen2 {
+    display: none;
+  }
+  .sobre {
+    width: 100%;
+    text-align: center;
+  }
+  .secCuatro img {
+    display: none;
+  }
+  #text {
+    width: 100%;
+    text-align: center;
+  }
+  .secCinco {
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .secCinco iframe {
+    width: 80%;
+    height: 30%;
+  }
+  .xs {
+    display: none;
+  }
+  .secSeis {
+    padding: 4%;
+    width: 100%;
+    transform: translate(0, 0%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(
+      -225deg,
+      #65379b 0%,
+      #886aea 53%,
+      #6457c6 100%
+    );
+  }
+  #ofi {
+    width: 100%;
+  }
+  .secSiete iframe {
+    width: 100%;
+    height: 50vh;
+  }
+  .listFull img {
+    width: 20%;
+    display: block;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5%);
+    cursor: pointer;
+  }
+  .esteMenos {
+    width: 100vw;
+    height: 30vh;
+  }
+  .icoPie img {
+    display: none;
+  }
+  .contenedorAsk {
+    z-index: 100;
+    width: 100%;
+    height: 80vh;
+    position: fixed;
+    left: 0;
+    top: 4%;
+    cursor: pointer;
+    transform: rotate(90deg) translate(-150%, 230%);
+    transition: all 600ms;
+  }
+  .form {
+    background: rgba(0, 0, 0, 0.5);
+    max-width: 650px;
+    width: 100vw;
+    padding: 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 6px;
+  }
+  /* lineas especificas SOCIAL */
+  /* lineas especificas SOCIAL */
+  /* lineas especificas SOCIAL */
+  /* lineas especificas SOCIAL */
+  .contenedorSocial {
+    display: grid;
+    grid-template-areas: "formulario" "redesS";
+    width: 100%;
+    justify-content: space-around;
+    height: 180vh;
+  }
+  .redesS {
+    width: 100vw;
+    height: 30vh;
+  }
+  /* Lineas especificas Media */
+  /* Lineas especificas Media */
+  /* Lineas especificas Media */
+  /* Lineas especificas Media */
+  .titMedia {
+    font-size: 70px;
+    font-weight: bold;
+    color: #65379b;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 60px 0;
+  }
+  .contenedorPokes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .imgPoke {
+    padding-left: 11%;
+    padding-right: 11%;
+    padding-bottom: 5%;
+    width: 60vw;
+    height: 30vh;
+    display: flex;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6 rgba(0, 0, 0, 0.5%);
+    background-image: url(../assets/open-pokeball.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  .col {
+    flex-basis: 100%;
+    min-width: 250px;
+  }
+  .col1 {
+    flex-basis: 100%;
+    min-width: 250px;
+  }
+  /* lineas especificas DONATE */
+  /* lineas especificas DONATE */
+  /* lineas especificas DONATE */
+  /* lineas especificas DONATE */
+  .contenedorDonate {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: auto;
+    padding: 0 0;
+  }
+  .bodyDonate {
+    font-family: "Quicksand", sans-serif;
+    background-image: url(../assets/backDonate.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+@media (min-width: 351px) and (max-width: 516px) {
+  /* /Dispositivo SMALL/ */
+  .enunciado1 {
+    position: absolute;
+    top: 35vh;
+    text-align: center;
+  }
+  #titulo {
+    font-size: 40px;
+    font-weight: bold;
+    color: #558ed9;
+    margin-bottom: 30px;
+  }
+  .secUno .img {
+    display: none;
+  }
+  .pRespuesta {
+    width: 100%;
+    text-align: center;
+  }
+  .secDos #imagen2 {
+    display: none;
+  }
+  .sobre {
+    width: 100%;
+    text-align: center;
+  }
+  .secCuatro img {
+    display: none;
+  }
+  #text {
+    width: 100%;
+    text-align: center;
+  }
+  .secCinco {
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .secCinco iframe {
+    width: 80%;
+    height: 30%;
+  }
+  .xs {
+    display: none;
+  }
+  .secSeis {
+    padding: 4%;
+    width: 100%;
+    transform: translate(0, 0%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(
+      -225deg,
+      #65379b 0%,
+      #886aea 53%,
+      #6457c6 100%
+    );
+  }
+  #ofi {
+    width: 100%;
+  }
+  .secSiete {
+    height: 100%;
+    width: 100%;
+    align-items: stretch;
+  }
+  .secSiete iframe {
+    width: 100%;
+    height: 50vh;
+  }
+  .listFull img {
+    width: 20%;
+    display: block;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5%);
+    cursor: pointer;
+  }
+  .esteMenos {
+    width: 100vw;
+    height: 30vh;
+  }
+  .icoPie img {
+    display: none;
+  }
+  .contenedorAsk {
+    z-index: 100;
+    width: 100%;
+    height: 80vh;
+    position: fixed;
+    left: 0;
+    top: 4%;
+    cursor: pointer;
+    transform: rotate(90deg) translate(-150%, 230%);
+    transition: all 600ms;
+  }
+  .form {
+    background: rgba(0, 0, 0, 0.5);
+    max-width: 650px;
+    width: 100vw;
+    padding: 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 6px;
+  }
+  /* lineas especificas SOCIAL */
+  /* lineas especificas SOCIAL */
+  /* lineas especificas SOCIAL */
+  /* lineas especificas SOCIAL */
+  .contenedorSocial {
+    display: grid;
+    grid-template-areas: "formulario" "redesS";
+    width: 100%;
+    justify-content: space-around;
+    height: 180vh;
+  }
+  .redesS {
+    width: 100vw;
+    height: 30vh;
+  }
+  /* Lineas especificas Media */
+  /* Lineas especificas Media */
+  /* Lineas especificas Media */
+  /* Lineas especificas Media */
+  .titMedia {
+    font-size: 70px;
+    font-weight: bold;
+    color: #65379b;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 60px 0;
+  }
+  .contenedorPokes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .imgPoke {
+    padding-left: 11%;
+    padding-right: 11%;
+    padding-bottom: 5%;
+    width: 50vw;
+    height: 30vh;
+    display: flex;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6 rgba(0, 0, 0, 0.5%);
+    background-image: url(../assets/open-pokeball.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  .col {
+    flex-basis: 100%;
+    min-width: 250px;
+  }
+  .col1 {
+    flex-basis: 100%;
+    min-width: 250px;
+  }
+}
+@media (min-width: 517px) and (max-width: 980px) {
+  /* /Dispositivo LARGE/ */
+  .enunciado1 {
+    position: absolute;
+    top: 35vh;
+    text-align: center;
+  }
+  #titulo {
+    font-size: 40px;
+    font-weight: bold;
+    color: #558ed9;
+    margin-bottom: 30px;
+  }
+  .secUno .img {
+    display: none;
+  }
+  .pRespuesta {
+    width: 100%;
+    text-align: center;
+  }
+  .secDos #imagen2 {
+    display: none;
+  }
+  .sobre {
+    width: 100%;
+    text-align: center;
+  }
+  .secCuatro img {
+    display: none;
+  }
+  #text {
+    width: 100%;
+    text-align: center;
+  }
+  .secCinco {
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .secSeis {
+    padding: 4%;
+    width: 100%;
+    transform: translate(0, 0%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(
+      -225deg,
+      #65379b 0%,
+      #886aea 53%,
+      #6457c6 100%
+    );
+  }
+  #ofi {
+    width: 100%;
+  }
+  .secSiete {
+    height: 100%;
+    width: 100%;
+  }
+  .secSiete iframe {
+    width: 100%;
+    height: 50vh;
+  }
+  .esteMenos {
+    width: 100vw;
+    height: 30vh;
+  }
+  /* Lineas especificas Media */
+  /* Lineas especificas Media */
+  /* Lineas especificas Media */
+  /* Lineas especificas Media */
+  .imgPoke {
+    padding-left: 11%;
+    padding-right: 11%;
+    padding-bottom: 5%;
+    width: 30vw;
+    height: 25vh;
+    display: flex;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6 rgba(0, 0, 0, 0.5%);
+    background-image: url(../assets/open-pokeball.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}
+@media (min-width: 981px) and (max-width: 10000px) {
+  /* /Dispositivo Extra large/ */
+  .secSiete {
+    height: 100%;
+    transform: translate(0, 0%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.5;
+  }
+  .secSiete {
+    height: 100%;
+    width: 100%;
+  }
+  .secSiete iframe {
+    width: 80vw;
+    height: 80vh;
+  }
+  body {
+    max-width: 1920px;
+    margin: auto;
+  }
+}
